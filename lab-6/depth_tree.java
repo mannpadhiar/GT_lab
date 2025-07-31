@@ -1,7 +1,3 @@
-
-
-
-
 class DepthTree{
     public static void main(String[] args) {
         int arr[] = {1,2,-1,-1,3,4,-1,-1,5,-1,-1};
@@ -13,7 +9,6 @@ class DepthTree{
         System.err.println(depth);
     }
 }
-
 
 class ExampleNode{
     class Node{
