@@ -21,7 +21,7 @@ class DominentSet{
             int v = arr[i][1];
             adjList.get(u).add(v);
             adjList.get(v).add(u);
-        }
+        }               
 
         System.out.println(adjList);
 
@@ -41,6 +41,15 @@ class DominentSet{
 
         System.out.println(subSets);
     }
+
+    // void findSubsets(int nodes[],int index,List<Integer> ds,List<List<Integer>> ans){
+    //     if(index == nodes.length)return;
+
+    //     ds.add(nodes[index]);
+    //     findSubsets(nodes, index+1, ds, ans);
+    //     ds.remove(nodes[index]);
+    //     findSubsets(nodes, index+1, ds, ans);
+    // }
 
     static boolean checkDominent(List<Integer> subSets,List<List<Integer>> adjList){
         boolean visited[] = new boolean[4];
